@@ -1,0 +1,108 @@
+<snippet>
+	<content><![CDATA[
+ 	// #include <bits/stdc++.h>
+#include "bits/stdc++.h"
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
+using namespace std;
+using namespace chrono;
+using namespace __gnu_pbds;
+#define endl ("\n")
+#define pi (3.141592653589)
+#define mod 1000000007
+#define int long long
+#define float double
+#define pb push_back
+#define ppb pop_back
+#define mp make_pair
+#define ff first
+#define ss second
+#define sz(x) ((int)(x).size())
+#define all(c) c.begin(), c.end()
+#define mini3(a, b, c) min(c, min(a, b))
+#define mini4(a, b, c, d) min(d, min(c, min(a, b)))
+#define rrep(i, n) for(int i=n-1;i>=0;i--)
+#define rep(i,n) for(int i=0;i<n;i++)
+#define repk(i, k, n) for(int i=k;i<n;i++)
+#define fast ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
+#define sum(a)     ( accumulate ((a).begin(), (a).end(), 0ll))
+#define min_el(a)    (*min_element((a).begin(), (a).end()))
+#define max_el(a)    (*max_element((a).begin(), (a).end()))
+#define min_idx(a)    ( min_element((a).begin(), (a).end()) - (a).begin())
+#define max_idx(a)    ( max_element((a).begin(), (a).end()) - (a).begin())
+
+typedef tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update > pbds; // find_by_order, order_of_key
+
+//------------------------------------------------------------------------------------------------------------------
+// debug
+#define debug(x) cout<<#x<<" = "<<x<<endl;
+#define debug1d(arr) for(auto x: arr) cout<<x<<" "; cout<<endl
+#define debug2d(arr) for(auto v : arr){ for(auto x : v) cout<<x<<" "; cout<<endl; }
+#define debug2(p, q)             cout << #p << ": " << p << " | " << #q << ": " << q << endl;
+#define debug3(p, q, r)          cout << #p << ": " << p << " | " << #q << ": " << q << " | " << #r << ": " << r << endl;
+#define debug4(p, q, r, s)       cout << #p << ": " << p << " | " << #q << ": " << q << " | " << #r << ": " << r << " | " << #s << ": " << s << endl;
+#define debug5(p, q, r, s, t)    cout << #p << ": " << p << " | " << #q << ": " << q << " | " << #r << ": " << r << " | " << #s << ": " << s << " | " << #t << ": " << t << endl;
+#define debug6(p, q, r, s, t, u) cout << #p << ": " << p << " | " << #q << ": " << q << " | " << #r << ": " << r << " | " << #s << ": " << s << " | " << #t << ": " << t << " | " << #u << ": " << u << endl;
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+// read functions:
+
+void read1_i(vector<int> &v, int n){	rep(i,n) { int x;cin>>x; v.pb(x); }}
+void read1_c(vector<char> &v, int n){ rep(i,n) { char x;cin>>x; v.pb(x); }}
+void read2_i(vector<vector<int>> &v, int n, int m){ rep(i,n)	{ vector<int> temp; rep(j,m) { int x;cin>>x; temp.pb(x); } v.pb(temp); }}
+void read2_c(vector<vector<char>> &v, int n, int m){ rep(i,n)	{ vector<char> temp; rep(j,m) { char x;cin>>x; temp.pb(x); } v.pb(temp); }}
+
+// -----------------------------------------------------------------------------------------------------------------------
+// maths functions
+
+bool isperfectsquare(double n){	if (ceil((double)sqrt(n)) == floor((double)sqrt(n))) { return true;	} else { return false;}}
+int gcd(int a, int b){	if (b == 0)		return a;	return gcd(b, a % b) ;}
+int lcm(int a,int b){ return ((a/gcd(a,b))*b);}
+bool isPrime(int n){ if (n <= 1)  return false;  for (int i = 2; i < n; i++)  if (n % i == 0)  return false;  return true;}
+int no_dig(int n){	int no=0; while(n!=0) {	no++; n/=10; }	return no;}
+int power(int a, int n){ if(n==0) return 1;  int subprob=power(a,n/2); if(n&1) return a*subprob*subprob; return subprob*subprob;}
+
+//---------------------------------------------------------------------------------------------------------------------------
+// string func------
+
+bool ispalindrome(const string &s) {  return s==string (s.rbegin(),s.rend());}
+
+//---------------------------------------------------------------------------------------------------------------------------
+//utility func
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+void solve()
+{
+	${1}
+}
+	
+
+int32_t main(){
+    fast
+    
+    // Fuck Ratings, I'm in Love with Experience. 
+    // Once a Charas, Always a CHARAS.
+
+
+    /* DONT PANIC TAKE YOUR TIME*/
+    // REMEMBER!!!!!!   LATE SUBMISSION IS BETTER THAN WRONG SUBMISSION
+    
+    int t=1;
+    cin>>t;
+    // int x=0;
+    while(t--){
+    	// x++;
+    	// cout<<"Case #"<<x<<": ";
+        solve();       
+    }
+    return 0;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
